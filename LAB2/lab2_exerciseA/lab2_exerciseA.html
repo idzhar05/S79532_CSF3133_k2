@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculty Career Day</title>
+</head>
+<body>
+
+    <!-- Header-->
+    <header>
+        <h1>Faculty Career Day 2026</h1>
+        <p>Connecting Talent with Industry Opportunities</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About the Event</a> |
+        <a href="#schedule">Event Schedule</a> |
+        <a href="#register">Registration</a>
+    </nav>
+
+    <!-- About the event -->
+    <section id="about">
+        <h2>About the Event</h2>
+        
+
+        <article>
+            <h3>Industry Keynote</h3>
+            <p>Gain insights from top tech executives on what companies are looking for in fresh graduates.</p>
+        </article>
+
+
+        <article>
+            <h3>Resume Review Clinic</h3>
+            <p>Bring your CV and get one-on-one feedback from professional recruiters to help you stand out.</p>
+        </article>
+    </section>
+
+    <!-- Event Schedule -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        
+        <!-- Table-->
+        <table >
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            
+            <tr>
+                <td>08:30 AM</td>
+                <td>Registration & Booth Setup</td>
+                <td rowspan="2">Dewan Sultan Mizan</td>
+                <td>Student Committee</td>
+            </tr>
+            
+            <tr>
+                <td>09:30 AM</td>
+                <td>Industry Keynote Speech</td>
+                <td>Prof. Dr. Azman</td>
+            </tr>
+            
+            <tr>
+                <td>10:45 AM</td>
+                <td>Resume Review Clinic</td>
+                <td>Seminar Room A</td>
+                <td>Ms. Hidayah</td>
+            </tr>
+            
+            <tr>
+                <td>12:30 PM</td>
+                <td colspan="3" style="text-align: center;">Lunch Break & Networking</td>
+            </tr>
+            <tr>
+                <td>02:00 PM</td>
+                <td>Walk-in Interviews</td>
+                <td>Interview Rooms 1-5</td>
+                <td>HR Representatives</td>
+            </tr>
+            <tr>
+                <td>04:30 PM</td>
+                <td>Closing Ceremony & Lucky Draw</td>
+                <td>Dewan Sultan Mizan</td>
+                <td>Event Director</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register">
+        <h2>Registration</h2>
+        
+
+        <form action="register.html" method="post">
+            
+            <!-- Form Structure -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"><br><br>
+
+            <label for="matric">Matric Number:</label>
+            <input type="text" id="matric" name="matric"><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email"><br><br>
+
+            <!-- Year of Study -->
+            <label>Year of Study:</label><br>
+            <input type="radio" id="year1" name="year" value="1">
+            <label for="year1">Year 1</label>
+            <input type="radio" id="year2" name="year" value="2">
+            <label for="year2">Year 2</label>
+            <input type="radio" id="year3" name="year" value="3">
+            <label for="year3">Year 3</label>
+            <input type="radio" id="year4" name="year" value="4">
+            <label for="year4">Year 4</label><br><br>
+
+            <!-- Sessions -->
+            <label>Sessions you want to join:</label><br>
+            <input type="checkbox" id="session1" name="session1" value="keynote">
+            <label for="session1">Industry Keynote</label><br>
+            <input type="checkbox" id="session2" name="session2" value="resume">
+            <label for="session2">Resume Review Clinic</label><br>
+            <input type="checkbox" id="session3" name="session3" value="interviews">
+            <label for="session3">Walk-in Interviews</label><br><br>
+
+            <!-- Programme-->
+            <label for="programme">Programme:</label>
+            <select id="programme" name="programme">
+                <option value="mobile">Computer Science (Mobile Computing)</option>
+                <option value="se">Computer Science (Software Engineering)</option>
+                <option value="data">Data Analytics</option>
+                <option value="maritime">Maritime Management</option>
+            </select><br><br>
+
+            <!-- Submit-->
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Footer-->
+    <footer>
+        <p>&copy; 2026 Career Development Committee</p>
+    </footer>
+
+</body>
+</html>
