@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+
+<body>
+    <!-- 
+    Errors: 
+    Error 1 (Line 10): Incorrect closing tag </head> used instead of </header>.
+    Error 2 (Line 20): Used <td> instead of <th> for the Rating.
+    Error 3 (Line 22): Closing tag for <tr> are missing.
+    Error 4 (Line 28): Incorrect colspan="3" used. It should be colspan="2"
+    Error 5 (Line 32): Missing closing </td> tag after "Semantic HTML".
+    Error 6 (Line 40): The input id are incoorect. It should be id="name"
+    Error 7 (Line 42-45): Radio buttons do not share the same 'name' attribute, preventing them from functioning as a single group.
+    Error 8 (Line 47): Label 'for' attribute ("labs") does not match the checkbox 'id' ("lab").
+    Error 9 (Line 49): Incorrect spelling on closing tag </from>, should be </form>.
+    Error 10 (Line 52): Missing semicolon for the copyright. It should be &copy;.
+    -->
+
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <nav>
+        <a href="#results">Results</a> |
+        <a href="#form">Feedback Form</a> |
+
+        <!--New Navigation-->
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table>
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">Tables and Forms</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+            <!-- Added Week 4 and 5 with rowspan and Average Rating with colspan -->
+            <tr>
+                <td>4</td>
+                <td rowspan="2">Mini Project</td>
+                <td>4.2</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>4.6</td>
+            </tr>
+            <tr>
+                <td colspan="2">Average Rating</td>
+                <td>4.3</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Added Comments section with two articles -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+        <article>
+            <h3>Ahmad Irfan</h3>
+            <p>The labs provided great hands-on experience with HTML forms.</p>
+        </article>
+        <article>
+            <h3>Siti Bainun</h3>
+            <p>Using semantic tags made page structuring much easier to understand.</p>
+        </article>
+    </section>
+
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="name"><br><br>
+
+            <!-- Added E-mail input with matching label -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label>Overall rating: </label><br>
+            <input type="radio" id="good" name="rating" value="good">
+            <label for="good">Good</label>
+            <input type="radio" id="average" name="rating" value="average">
+            <label for="average">Average</label>
+            <input type="radio" id="poor" name="rating" value="poor">
+            <label for="poor">Poor</label><br><br>
+
+            <!-- Added 3 checkboxes for practice topics -->
+            <label>Topics I want more practice on:</label><br>
+            <input type="checkbox" id="prac_tables" name="practice" value="tables">
+            <label for="prac_tables">Tables</label><br>
+            <input type="checkbox" id="prac_forms" name="practice" value="forms">
+            <label for="prac_forms">Forms</label><br>
+            <input type="checkbox" id="prac_semantic" name="practice" value="semantic">
+            <label for="prac_semantic">Semantic HTML</label><br><br>
+
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br><br>
+
+            <!-- Added select drop-down for Section/Group -->
+            <label for="group">Section/Group:</label>
+            <select id="group" name="group">
+                <option value="sec1">Section 1</option>
+                <option value="sec2">Section 2</option>
+                <option value="sec3">Section 3</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+</body>
+
+</html>
