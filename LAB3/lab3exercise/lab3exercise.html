@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 3 Exercise</title>
+</head>
+<body>
+
+    <!-- Header div -->
+    <div id="header">
+        <h1>CALCULATOR<span>- Input, Output and Result</span></h1>
+    </div>
+
+    <!-- Contact form div -->
+    <div id="contact-form">
+        <form action="">
+            <label>Email: 
+                <input type="email" name="email" required>
+            </label><br><br>
+            
+            <label>Contact Date: 
+                <input type="date" name="contactDate">
+            </label><br><br>
+            
+            <label>Satisfaction: 
+                <input type="range" name="satisfaction" min="1" max="10" step="1" value="5">
+            </label><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Calculator div -->
+    <div id="calculator">
+        <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+            <input id="num1" type="number" value="0"> +
+            <input id="num2" type="number" value="0"> =
+            <output name="result" for="num1 num2">0</output>
+        </form>
+    </div>
+
+    <!-- Footer div -->
+    <div id="footer">
+        Contact us: calc05@gmail.com | Copyright &copy; 2026
+    </div>
+
+</body>
+</html>
