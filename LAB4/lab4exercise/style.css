@@ -1,0 +1,142 @@
+/* General Layout */
+header,
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #d32f2f;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #000000;
+    /* Changes to black on hover */
+}
+
+/* Media */
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #000;
+}
+
+figcaption {
+    font-style: italic;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Form Styling */
+.styled-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.styled-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.styled-form button {
+    background-color: #d32f2f;
+    /* Red */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.styled-form button:hover {
+    background-color: #000000;
+}
+
+/* Styling for Form Gender and Hobbies */
+.styled-form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.styled-form legend {
+    font-weight: bold;
+    color: #d32f2f;
+    /* Red */
+    padding: 0 5px;
+}
+
+/* Style for radio and checklist */
+.styled-form .radio-checkbox-label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 8px;
+    color: #333;
+    cursor: pointer;
+}
+
+.styled-form input[type="radio"],
+.styled-form input[type="checkbox"] {
+    margin-right: 10px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
