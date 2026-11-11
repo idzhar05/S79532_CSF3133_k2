@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+
+<body>
+    <!-- 
+    Error 1 (Line 1): Missing html in <!DOCTYPE html>.
+    Error 2 (Line 9): Incorrect closing tag placement. It shopuld switch place.
+    Error 3 (Line 11): <span id="content"> should be a block element not span.
+    Error 4 (Line 13): Missing semicolon in &amp; entity.
+    Error 5 (Line 14): total.value calculation concatenates strings. Fixed by wrapping values in parseInt().
+    Error 6 (Line 18): Wrong input speelling on email.
+    Error 7 (Line 22 & 23): List attribute "movies" does not match datalist id "movielist". Changed datalist id to "movies".
+    Error 8 (Line 32): Range min="5" max="1" is switched. Fixed to min="1" max="5".
+    Error 9 (Line 33): Output for="adult kid" refers to a non-existent id "kid". Fixed to "adult child".
+    Error 10 (Line 36): Changed closing tag to </div>.
+    Error 11 (Line 38): &Copy; entity is case-sensitive and should be lowercase &copy;.
+    Error 12 (Lines 41-55): Repeated closing tag. Cleanup to fixed the coding.
+    -->
+
+    <div id="header">
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+    </div>
+
+    <!-- NOW SHOWING sidebar -->
+    <div id="sidebar">
+        <h2>Now Showing</h2>
+        <ul>
+            <li><strong>Despicable Me</strong> - <span>PG-13</span> <a href="#trailer1">Trailer</a></li>
+            <li><strong>Boboiboy Galaxy The Movie 3</strong> - <span>U</span> <a href="#trailer2">Trailer</a></li>
+            <li><strong>Kudrat 1968: High Council</strong> - <span>18</span> <a href="#trailer3">Trailer</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <h2>Book Your Ticket</h2>
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+        <!-- Updated oninput to calculate both total tickets and total price -->
+        <form action="booking.php" oninput="
+            total.value = parseInt(adult.value || 0) + parseInt(child.value || 0); 
+            price.value = (parseInt(adult.value || 0) * 12) + (parseInt(child.value || 0) * 8);">
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <!-- Phone and Show Time inputs -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+            <label for="time">Show Time:</label>
+            <input type="time" id="time" name="time"><br>
+
+            <label for="date">Show date:</label>
+            <input type="date" id="date" name="date"><br>
+
+            <label for="movie">Movie:</label>
+            <input id="movie" name="movie" list="movies"><br>
+            <datalist id="movies">
+                <option value="Space Rangers"></option>
+                <option value="Kampung Comedy"></option>
+            </datalist>
+
+            <label for="adult">Adult tickets:</label>
+            <input type="number" id="adult" name="adult" value="0"><br>
+
+            <label for="child">Child tickets:</label>
+            <input type="number" id="child" name="child" value="0"><br>
+
+            <label for="rating">Rate our service:</label>
+            <input type="range" id="rating" name="rating" min="1" max="5"><br>
+
+            Total tickets: <output name="total" for="adult child">0</output><br>
+
+            <!-- Total Price Output -->
+            Total Price (RM): <output name="price" for="adult child">0</output><br>
+
+            <input type="submit" value="Book Now">
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+        <!-- Add on new Footer entity -->
+        <p>e-Ticket&reg; &ndash; Campus Cinema &lt; RM10 every Tuesday</p>
+    </div>
+</body>
+
+</html>
