@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu - Tourism Promotion Page</title>
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Internal CSS-->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f6f7;
+        }
+
+        .hero-header {
+            text-align: center;
+            padding: 30px;
+            background-color: #e0f2f1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header class="hero-header">
+        <h1>Discover Terengganu</h1>
+        <h2>The Jewel of the East Coast</h2>
+    </header>
+
+    <!--Nav-->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Watch Promo</a></li>
+            <li><a href="#trip">Book Your Trip</a></li>
+        </ul>
+    </nav>
+
+    <!--Main-->
+    <main>
+        <!--Destinations Section-->
+        <section id="destinations">
+            <h2 class="section-title">Popular Packages</h2>
+
+            <!--Article 1-->
+            <article class="card">
+                <h3>Pulau Redang Getaway</h3>
+                <p>Experience crystal-clear waters and vibrant marine life perfect for snorkeling and diving.</p>
+                <p class="price-tag">Price: <span class="old-price">RM 499</span> <span class="new-price">RM 299</span>
+                </p>
+            </article>
+
+            <!--Article 2-->
+            <article class="card">
+                <h3>Tasik Kenyir Exploration</h3>
+                <p>Discover the largest man-made lake in Southeast Asia surrounded by lush rainforests.</p>
+                <p class="price-tag">Price: <span class="old-price">RM 350</span> <span class="new-price">RM 199</span>
+                </p>
+            </article>
+
+            <!--Article 3-->
+            <article class="card">
+                <h3>Pasar Payang Cultural Tour</h3>
+                <p>Shop for authentic batik, silk, and local traditional delicacies in the heart of Kuala Terengganu.
+                </p>
+                <p class="price-tag">Price: <span class="old-price">RM 150</span> <span class="new-price">RM 80</span>
+                </p>
+            </article>
+
+            <!--Meter-->
+            <div class="availability">
+                <p>Trip Seats Filled: <meter min="0" max="40" value="28">28/40</meter> (28 out of 40 booked)</p>
+            </div>
+        </section>
+
+        <!--Media Insertion (Video)-->
+        <section id="video">
+            <h2 class="section-title">Promotional Video</h2>
+            <figure>
+                <video width="800" height="450" controls>
+                    <source src="terengganu_promo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Experience the beauty, culture, and nature of Terengganu.</figcaption>
+            </figure>
+        </section>
+
+        <!--Form-->
+        <section id="trip">
+            <h2 class="section-title">Trip Interest Form</h2>
+            <form action="#" method="POST" class="trip-form">
+
+                <label for="user-name">Name:</label><br>
+                <input type="text" id="user-name" name="name" required><br><br>
+
+                <label for="user-email">E-mail:</label><br>
+                <input type="email" id="user-email" name="email" required><br><br>
+
+                <fieldset>
+                    <legend>Traveller Type:</legend>
+                    <input type="radio" id="student" name="traveller" value="Student">
+                    <label for="student">Student</label><br>
+                    <input type="radio" id="staff" name="traveller" value="Staff">
+                    <label for="staff">Staff</label><br>
+                    <input type="radio" id="public" name="traveller" value="Public">
+                    <label for="public">Public</label>
+                </fieldset><br>
+
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <input type="checkbox" id="islands" name="interests" value="Islands">
+                    <label for="islands">Islands</label><br>
+                    <input type="checkbox" id="food" name="interests" value="Food">
+                    <label for="food">Food</label><br>
+                    <input type="checkbox" id="culture" name="interests" value="Culture">
+                    <label for="culture">Culture</label><br>
+                    <input type="checkbox" id="nature" name="interests" value="Nature">
+                    <label for="nature">Nature</label>
+                </fieldset><br>
+
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <p>&copy; 2026 State Tourism Office of Terengganu</p>
+        <address>
+            For more info, email us at: <a href="mailto:tourism@terengganu.gov.my"
+                class="footer-link">tourism@terengganu.gov.my</a>
+        </address>
+    </footer>
+
+</body>
+
+</html>
