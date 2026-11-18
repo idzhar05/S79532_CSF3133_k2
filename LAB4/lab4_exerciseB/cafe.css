@@ -1,0 +1,110 @@
+a:link {
+    color: #1A5276;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #E67E22;
+}
+
+a:active {
+    color: #C0392B;
+}
+
+/*Changed 'overlined' to 'overline'*/
+h1 {
+    text-decoration: overline;
+}
+
+/*Added missing colon for color*/
+p {
+    color: #333333;
+    text-align: justify;
+}
+
+#intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+}
+
+/*Added missing '.' to make it a class selector*/
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+}
+
+/*Navigation Bar*/
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeded;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 25px;
+    background-color: #d6eaf8;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #aed6f1;
+}
+
+/*Promotion item styling*/
+.old-price {
+    text-decoration: line-through;
+    color: #95a5a6;
+    margin-right: 8px;
+}
+
+/*Video Styling*/
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+figure {
+    margin: 0;
+    padding: 15px;
+    background-color: #fdfefe;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+}
+
+/*Feedback Form Styling*/
+.feedback-form {
+    background-color: #fef9e7;
+    padding: 20px;
+    border: 2px solid #f1c40f;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    margin: 15px 0;
+}
+
+fieldset {
+    border: 1px solid #d4ac0d;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #fff;
+}
