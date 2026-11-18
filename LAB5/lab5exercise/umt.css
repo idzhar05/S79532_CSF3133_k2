@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7f6;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Headers*/
+header{
+    background-color: #4a154b;
+    color:white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/*Navigation*/
+nav{
+    background-color: #2b0b2c;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin:0;
+}
+
+nav ul li a{
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+
+}
+
+/*Hover*/
+nav ul li a:hover {
+    background-color: #79257a;
+    color: #ffffff;
+}
+
+/* Layout Structure: Spacing and margins to separate sections */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Text Alignment and Spacing */
+article h2 {
+    margin-bottom: 15px;
+    color: #4A154B;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+article p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+/* Borders and Padding for Table */
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4A154B;
+    color: white;
+    font-weight: 600;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Table Hover Effects for Excellent Rubric Criteria */
+tr:hover {
+    background-color: #f1e6f2;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #e2e2e2; /* Subtle background color */
+    color: #555;
+    text-align: center; /* Centered text */
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
